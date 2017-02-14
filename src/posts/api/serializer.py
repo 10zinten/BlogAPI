@@ -12,3 +12,21 @@ class PostSerializer(ModelSerializer):
 			'content',
 			'publish', 
 		]
+
+
+"""
+	
+data = {
+	"title": "Cool Buddy",
+	"content": "Cool content",
+	"publish": "2017-2-14",
+	"slug": "Cool-Buddy",
+}
+
+new_item = PostSerializer(data=data)
+if new_item.is_valid():
+	new_item.save()
+else:
+	print(new_item.errors)	
+
+"""
